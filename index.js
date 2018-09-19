@@ -49,7 +49,7 @@ app.get('/organisation', async function(req, res) {
 	
 	try {
 		let organisations = await xeroClient.organisations.get()
-		res.send("Hello, " + organisations.Organisations[0].Name);
+		res.send("Hai, " + organisations.Organisations[0].Name);
 	} catch (err) {
 		res.send("Sorry, something went wrong");
 	}
